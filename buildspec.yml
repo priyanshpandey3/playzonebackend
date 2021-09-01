@@ -11,5 +11,5 @@ phases:
       - echo Build completed successfully
 artifacts:
   files:
-    - target/playzoneService-cicd.jar
+    - target/playzoneService.jar
   discard-paths: yes
