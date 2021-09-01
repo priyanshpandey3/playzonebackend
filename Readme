@@ -1,0 +1,190 @@
+
+Team
+
+getAllTeams()
+url:localhost:8081/api/teams/
+
+getByTeamId()
+url:localhost:8081/api/teams/3
+
+createTeam()
+url:localhost:8081/api/teams/createteam
+body:{
+    "teamId":8,
+    "teamName":"PNB",
+    "userId":1,
+    "status":1,
+    "teamCode":"PNB",
+    "regAmount":"12000"
+}
+
+
+deleteTeamById()
+url:localhost:8081/api/teams/delete/1
+
+updateTeamById()
+url:localhost:8081/api/teams/update/2
+body:{
+    "teamName":"rpl",
+    "userId":2,
+    "status":0,
+    "teamCode":"RPL",
+    "regAmount":9000
+   
+    
+}
+.............................................................................
+TeamMember
+
+addTeamMember()
+url:localhost:8081/api/tms/addtm
+body:{
+    "memberName":"krithika",
+    "teamId":4
+}
+
+getAllTeamMembersByTeamId()
+url:localhost:8081/api/tms/2
+
+deleteTeamMemberById()
+url:localhost:8081/api/tms/delete/4
+
+
+updateTeamMemberById()
+url:localhost:8081/api/tms/update/3
+body:{
+    "memberName":"jyothi"
+}
+
+
+
+
+..............................................................................
+
+Tournament
+
+addTournament()
+url:localhost:8081/api/tournaments/addtournament
+body:{
+    "trId":6,
+    "trName":"T60",
+    "startDate":"2021-05-27",
+    "endDate":"2021-05-30",
+    "applnStartDate":"2021-05-21",
+    "applnEndDate":"2021-05-29",
+    "status":"active",
+    "info":"abouttournament:host:sm,contactno:123456783,mailid:sm@gmail.com"
+}
+getAllTournaments()
+url:localhost:8081/api/tournaments/
+
+
+getByTrId()
+url:localhost:8081/api/tournaments/6
+
+deleteTrById()
+url:localhost:8081/api/tournaments/delete/5
+
+updateTrById()
+url:localhost:8081/api/tournaments/update/6
+body:{
+   
+    "trName":"T80",
+    "startDate":"2021-05-25",
+    "endDate":"2021-05-30",
+    "applnStartDate":"2021-05-21",
+    "applnEndDate":"2021-05-30",
+    "status":"active",
+    "info":"abouttournament:host:am,contactno:123456783,mailid:am@gmail.com"
+}
+..............................................................................................................................
+Match
+
+creatematch()
+url:localhost:8081/api/matches/creatematch
+body:{
+
+"matchName":"A60",
+"team1Code":"BRK",
+"team2Code":"PNB",
+"venueId":4,
+"trId":5,
+"dateAndTime":"2021-06-21 10:00:00",
+"matchInfo":"Information about match",
+"status":"Up coming"
+
+}
+
+
+getAllMatches()
+url:localhost:8081/api/matches/
+
+
+getMatchByStatus()
+url:localhost:8081/api/matches/status/Up coming
+
+
+getMatchByMatchId()
+url:localhost:8081/api/matches/2
+
+
+
+
+
+getMatchByTrId()
+url:localhost:8081/api/matches/bytrid/1
+
+
+updateMatchById()
+url:localhost:8081/api/matches/update/5
+body:{
+
+"matchName":"A70",
+"team1Code":"BRK",
+"team2Code":"PNB",
+"venueId":4,
+"trId":5,
+"dateAndTime":"2021-06-21 10:00:00",
+"matchInfo":"Information about match",
+"status":"Up coming"
+
+}
+
+
+deleteMatchById()
+url:localhost:8081/api/matches/delete/4
+.................................................................................
+venue
+
+createVenue()
+url:localhost:8081/api/venues/createvenue
+body:{
+    "venueName":"Ambedker international stadium",
+    "venueAddress":"miyapur,hyd"
+}
+
+getAllVenues()
+url:localhost:8081/api/venues/
+
+getVenueByVenueId()
+url:localhost:8081/api/venues/3
+
+updateVenueById()
+url:localhost:8081/api/venues/update/2
+body:{
+    "venueName":"avani international stadium",
+    "venueAddress":"hitechcity,hyd"
+}
+
+
+deleteVenueById()
+url:localhost:8081/api/venues/delete/2
+
+
+
+ 
+ 
+
+
+
+
